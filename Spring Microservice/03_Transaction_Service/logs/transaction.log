@@ -1,0 +1,637 @@
+2026-03-14T00:02:29.668+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Starting Application using Java 25.0.1 with PID 22536 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service)
+2026-03-14T00:02:29.669+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : No active profile set, falling back to 1 default profile: "default"
+2026-03-14T00:02:29.697+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-14T00:02:29.697+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-14T00:02:30.128+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-14T00:02:30.153+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
+2026-03-14T00:02:30.447+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8383 (http)
+2026-03-14T00:02:30.454+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-14T00:02:30.455+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-14T00:02:30.476+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 778 ms
+2026-03-14T00:02:30.574+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-14T00:02:30.755+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@114270d4
+2026-03-14T00:02:30.756+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-14T00:02:30.769+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-14T00:02:30.790+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-14T00:02:30.984+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-14T00:02:31.033+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transaction_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: transaction_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-14T00:02:31.402+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-14T00:02:31.406+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:02:31.449+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-14T00:02:31.578+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-14T00:02:31.843+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-14T00:02:31.880+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8383 (http) with context path '/'
+2026-03-14T00:02:31.884+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Started Application in 2.408 seconds (process running for 2.715)
+2026-03-14T00:02:31.888+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-14T00:02:31.889+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-14T00:02:32.324+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [RMI TCP Connection(6)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-14T00:02:32.324+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-14T00:02:32.325+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-14T00:03:51.634+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-14T00:03:51.636+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-14T00:03:51.641+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-14T00:03:51.643+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:03:51.644+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-14T00:03:51.648+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-14T00:03:51.702+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Starting Application using Java 25.0.1 with PID 22536 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service)
+2026-03-14T00:03:51.703+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : No active profile set, falling back to 1 default profile: "default"
+2026-03-14T00:03:51.804+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-14T00:03:51.810+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2026-03-14T00:03:51.864+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8383 (http)
+2026-03-14T00:03:51.864+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-14T00:03:51.864+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-14T00:03:51.872+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 169 ms
+2026-03-14T00:03:51.894+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-03-14T00:03:51.906+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9113ae5
+2026-03-14T00:03:51.906+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-03-14T00:03:51.907+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-14T00:03:51.917+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-14T00:03:51.919+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transaction_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: transaction_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-14T00:03:51.949+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-14T00:03:51.950+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:03:51.984+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-14T00:03:52.047+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-14T00:03:52.055+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8383 (http) with context path '/'
+2026-03-14T00:03:52.058+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Started Application in 0.366 seconds (process running for 82.888)
+2026-03-14T00:03:52.058+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-14T00:03:52.058+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-14T00:03:52.059+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-14T00:04:19.786+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-14T00:04:19.786+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-14T00:04:19.786+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-14T00:04:19.930+05:30 ERROR 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8082/accountsapi/accounts/account/1": Connection refused: connect] with root cause
+
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.connect(Net.java:546) ~[na:na]
+	at java.base/sun.nio.ch.Net.connect(Net.java:535) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:659) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:597) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:166) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:516) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:604) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:276) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:380) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:393) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1030) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:963) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:899) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:872) ~[na:na]
+	at org.springframework.http.client.SimpleClientHttpRequest.executeInternal(SimpleClientHttpRequest.java:80) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:754) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:304) ~[spring-web-7.0.5.jar:7.0.5]
+	at com.msedcl.main.transaction.client.AccountServiceClient.getAccount(AccountServiceClient.java:21) ~[classes/:na]
+	at com.msedcl.main.transaction.service.TransactionServiceImpl.deposit(TransactionServiceImpl.java:31) ~[classes/:na]
+	at com.msedcl.main.transaction.controller.TransactionController.depositMoney(TransactionController.java:36) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-03-14T00:05:26.154+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-14T00:05:26.159+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-5] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-14T00:05:26.163+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-14T00:05:26.164+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:05:26.165+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-03-14T00:05:26.167+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-03-14T00:05:26.216+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Starting Application using Java 25.0.1 with PID 22536 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service)
+2026-03-14T00:05:26.216+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : No active profile set, falling back to 1 default profile: "default"
+2026-03-14T00:05:26.334+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-14T00:05:26.340+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2026-03-14T00:05:26.397+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8383 (http)
+2026-03-14T00:05:26.398+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-14T00:05:26.398+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-14T00:05:26.411+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 194 ms
+2026-03-14T00:05:26.437+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-03-14T00:05:26.449+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c36cde4
+2026-03-14T00:05:26.449+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-03-14T00:05:26.450+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-14T00:05:26.460+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-14T00:05:26.462+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transaction_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: transaction_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-14T00:05:26.480+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-14T00:05:26.480+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:05:26.517+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-14T00:05:26.602+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-14T00:05:26.609+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8383 (http) with context path '/'
+2026-03-14T00:05:26.611+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Started Application in 0.407 seconds (process running for 177.441)
+2026-03-14T00:05:26.611+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-14T00:05:26.611+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-14T00:05:26.612+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-14T00:05:37.087+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-14T00:05:37.091+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-9] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-14T00:05:37.099+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-14T00:05:37.100+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:05:37.100+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-03-14T00:05:37.104+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-03-14T00:05:37.151+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Starting Application using Java 25.0.1 with PID 22536 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service)
+2026-03-14T00:05:37.151+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : No active profile set, falling back to 1 default profile: "default"
+2026-03-14T00:05:37.243+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-14T00:05:37.248+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-03-14T00:05:37.294+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8383 (http)
+2026-03-14T00:05:37.295+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-14T00:05:37.295+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-14T00:05:37.308+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 156 ms
+2026-03-14T00:05:37.329+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-03-14T00:05:37.341+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3478b7a0
+2026-03-14T00:05:37.341+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-03-14T00:05:37.341+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-14T00:05:37.351+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-14T00:05:37.354+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transaction_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: transaction_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-14T00:05:37.372+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-14T00:05:37.373+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:05:37.403+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-14T00:05:37.463+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-14T00:05:37.472+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8383 (http) with context path '/'
+2026-03-14T00:05:37.473+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Started Application in 0.331 seconds (process running for 188.304)
+2026-03-14T00:05:37.474+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-14T00:05:37.474+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-14T00:05:37.474+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-14T00:05:51.190+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-14T00:05:51.191+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-14T00:05:51.191+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-14T00:05:51.196+05:30 ERROR 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8082/accountsapi/accounts/account/1": Connection refused: connect] with root cause
+
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.connect(Net.java:546) ~[na:na]
+	at java.base/sun.nio.ch.Net.connect(Net.java:535) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:659) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:597) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:166) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:516) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:604) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:276) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:380) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:393) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1030) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:963) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:899) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:872) ~[na:na]
+	at org.springframework.http.client.SimpleClientHttpRequest.executeInternal(SimpleClientHttpRequest.java:80) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:754) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:304) ~[spring-web-7.0.5.jar:7.0.5]
+	at com.msedcl.main.transaction.client.AccountServiceClient.getAccount(AccountServiceClient.java:23) ~[classes/:na]
+	at com.msedcl.main.transaction.service.TransactionServiceImpl.deposit(TransactionServiceImpl.java:31) ~[classes/:na]
+	at com.msedcl.main.transaction.controller.TransactionController.depositMoney(TransactionController.java:36) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-03-14T00:06:27.347+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-14T00:06:27.350+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-13] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-14T00:06:27.360+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-14T00:06:27.362+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:06:27.362+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-03-14T00:06:27.365+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-03-14T00:06:27.412+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Starting Application using Java 25.0.1 with PID 22536 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service)
+2026-03-14T00:06:27.414+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : No active profile set, falling back to 1 default profile: "default"
+2026-03-14T00:06:27.512+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-14T00:06:27.518+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2026-03-14T00:06:27.576+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8383 (http)
+2026-03-14T00:06:27.577+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-14T00:06:27.577+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-14T00:06:27.585+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 171 ms
+2026-03-14T00:06:27.604+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-03-14T00:06:27.615+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c639496
+2026-03-14T00:06:27.615+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-03-14T00:06:27.615+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-14T00:06:27.625+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-14T00:06:27.626+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transaction_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: transaction_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-14T00:06:27.642+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-14T00:06:27.642+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:06:27.672+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-14T00:06:27.732+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-14T00:06:27.740+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8383 (http) with context path '/'
+2026-03-14T00:06:27.741+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Started Application in 0.337 seconds (process running for 238.571)
+2026-03-14T00:06:27.741+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-14T00:06:27.742+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-14T00:06:27.742+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-14T00:06:29.141+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-14T00:06:29.142+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-17] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-14T00:06:29.146+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-14T00:06:29.147+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:06:29.147+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-03-14T00:06:29.150+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2026-03-14T00:06:29.201+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Starting Application using Java 25.0.1 with PID 22536 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service)
+2026-03-14T00:06:29.202+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : No active profile set, falling back to 1 default profile: "default"
+2026-03-14T00:06:29.294+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-14T00:06:29.299+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-03-14T00:06:29.349+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8383 (http)
+2026-03-14T00:06:29.349+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-14T00:06:29.349+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-14T00:06:29.358+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 156 ms
+2026-03-14T00:06:29.378+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-03-14T00:06:29.388+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34fd5911
+2026-03-14T00:06:29.388+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-03-14T00:06:29.388+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-14T00:06:29.398+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-14T00:06:29.401+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transaction_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: transaction_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-14T00:06:29.418+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-14T00:06:29.418+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:06:29.446+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-14T00:06:29.508+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-14T00:06:29.516+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8383 (http) with context path '/'
+2026-03-14T00:06:29.517+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Started Application in 0.326 seconds (process running for 240.348)
+2026-03-14T00:06:29.518+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-14T00:06:29.518+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-14T00:06:29.518+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-14T00:06:47.544+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-14T00:06:47.545+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-14T00:06:47.545+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-14T00:07:20.629+05:30 ERROR 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.HttpServerErrorException$InternalServerError: 500  on GET request for "http://localhost:8282/accountsapi/accounts/account/111": "{"timestamp":"2026-03-13T18:37:20.623Z","status":500,"error":"Internal Server Error","trace":"java.lang.RuntimeException: Account not found\r\n\tat com.msedcl.main.account.service.AccountServiceImpl.lambda$0(AccountServiceImpl.java:45)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:403)\r\n\tat com.msedcl.main.account.service.AccountServiceImpl.getAccountById(AccountServiceImpl.java:45)\r\n\tat com.msedcl.main.account.controller.AccountController.getAccountById(AccountController.java:48)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:565)\r\n\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)\r\n\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)\r\n\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)\r\n\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)\r\n\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)\r\n\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)\r\n\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)\r\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)\r\n\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)\r\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)\r\n\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)\r\n\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)\r\n\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)\r\n\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)\r\n\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)\r\n\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)\r\n\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\r\n\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)\r\n\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\r\n\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)\r\n\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)\r\n\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\r\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)\r\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)\r\n\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1474)\r\n","message":"Account not found","path":"/accountsapi/accounts/account/111"}"] with root cause
+
+org.springframework.web.client.HttpServerErrorException$InternalServerError: 500  on GET request for "http://localhost:8282/accountsapi/accounts/account/111": "{"timestamp":"2026-03-13T18:37:20.623Z","status":500,"error":"Internal Server Error","trace":"java.lang.RuntimeException: Account not found\r\n\tat com.msedcl.main.account.service.AccountServiceImpl.lambda$0(AccountServiceImpl.java:45)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:403)\r\n\tat com.msedcl.main.account.service.AccountServiceImpl.getAccountById(AccountServiceImpl.java:45)\r\n\tat com.msedcl.main.account.controller.AccountController.getAccountById(AccountController.java:48)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:565)\r\n\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)\r\n\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)\r\n\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)\r\n\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)\r\n\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)\r\n\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)\r\n\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)\r\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)\r\n\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)\r\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)\r\n\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)\r\n\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)\r\n\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)\r\n\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)\r\n\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)\r\n\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)\r\n\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\r\n\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)\r\n\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\r\n\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)\r\n\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)\r\n\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\r\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)\r\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)\r\n\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1474)\r\n","message":"Account not found","path":"/accountsapi/accounts/account/111"}"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:103) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:148) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:120) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:807) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:756) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:304) ~[spring-web-7.0.5.jar:7.0.5]
+	at com.msedcl.main.transaction.client.AccountServiceClient.getAccount(AccountServiceClient.java:24) ~[classes/:na]
+	at com.msedcl.main.transaction.service.TransactionServiceImpl.deposit(TransactionServiceImpl.java:31) ~[classes/:na]
+	at com.msedcl.main.transaction.controller.TransactionController.depositMoney(TransactionController.java:36) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-03-14T00:08:58.748+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-14T00:08:58.749+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-21] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-14T00:08:58.753+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-14T00:08:58.755+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:08:58.755+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-03-14T00:08:58.757+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2026-03-14T00:08:58.811+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Starting Application using Java 25.0.1 with PID 22536 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service)
+2026-03-14T00:08:58.811+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : No active profile set, falling back to 1 default profile: "default"
+2026-03-14T00:08:58.905+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-14T00:08:58.911+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-03-14T00:08:58.969+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8383 (http)
+2026-03-14T00:08:58.970+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-14T00:08:58.970+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-14T00:08:58.979+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 166 ms
+2026-03-14T00:08:59.000+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-03-14T00:08:59.016+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@155154ec
+2026-03-14T00:08:59.016+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-03-14T00:08:59.017+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-14T00:08:59.028+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-14T00:08:59.031+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transaction_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: transaction_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-14T00:08:59.049+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-14T00:08:59.049+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:08:59.089+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-14T00:08:59.157+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-14T00:08:59.165+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8383 (http) with context path '/'
+2026-03-14T00:08:59.167+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Started Application in 0.366 seconds (process running for 389.997)
+2026-03-14T00:08:59.168+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-14T00:08:59.168+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-14T00:08:59.168+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-14T00:09:02.748+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-14T00:09:02.748+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-14T00:09:02.749+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-14T00:09:02.773+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] c.m.m.t.client.AccountServiceClient      : 500  on GET request for "http://localhost:8282/accountsapi/accounts/account/111": "{"timestamp":"2026-03-13T18:39:02.771Z","status":500,"error":"Internal Server Error","trace":"java.lang.RuntimeException: Account not found\r\n\tat com.msedcl.main.account.service.AccountServiceImpl.lambda$0(AccountServiceImpl.java:45)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:403)\r\n\tat com.msedcl.main.account.service.AccountServiceImpl.getAccountById(AccountServiceImpl.java:45)\r\n\tat com.msedcl.main.account.controller.AccountController.getAccountById(AccountController.java:48)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:565)\r\n\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)\r\n\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)\r\n\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)\r\n\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)\r\n\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)\r\n\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)\r\n\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)\r\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)\r\n\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)\r\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)\r\n\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)\r\n\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)\r\n\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)\r\n\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)\r\n\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)\r\n\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)\r\n\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\r\n\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)\r\n\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\r\n\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)\r\n\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)\r\n\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\r\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)\r\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)\r\n\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1474)\r\n","message":"Account not found","path":"/accountsapi/accounts/account/111"}"
+2026-03-14T00:09:02.783+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.msedcl.main.transaction.exception.AccountNotFoundException: Invalid Account Number ::  111]
+2026-03-14T00:09:45.913+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-14T00:09:45.914+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-25] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-14T00:09:45.920+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-14T00:09:45.921+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:09:45.922+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-03-14T00:09:45.924+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2026-03-14T00:09:45.969+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Starting Application using Java 25.0.1 with PID 22536 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service)
+2026-03-14T00:09:45.969+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : No active profile set, falling back to 1 default profile: "default"
+2026-03-14T00:09:46.056+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-14T00:09:46.061+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-03-14T00:09:46.108+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8383 (http)
+2026-03-14T00:09:46.108+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-14T00:09:46.108+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-14T00:09:46.128+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 158 ms
+2026-03-14T00:09:46.148+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-03-14T00:09:46.161+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@453c977a
+2026-03-14T00:09:46.161+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-03-14T00:09:46.161+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-14T00:09:46.170+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-14T00:09:46.172+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transaction_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: transaction_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-14T00:09:46.186+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-14T00:09:46.187+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:09:46.214+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-14T00:09:46.273+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-14T00:09:46.281+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8383 (http) with context path '/'
+2026-03-14T00:09:46.282+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Started Application in 0.321 seconds (process running for 437.112)
+2026-03-14T00:09:46.282+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-14T00:09:46.282+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-14T00:09:46.283+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-14T00:10:07.858+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-14T00:10:07.860+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-29] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-14T00:10:07.864+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-14T00:10:07.865+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-29] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:10:07.865+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-03-14T00:10:07.866+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2026-03-14T00:10:07.913+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Starting Application using Java 25.0.1 with PID 22536 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service)
+2026-03-14T00:10:07.914+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : No active profile set, falling back to 1 default profile: "default"
+2026-03-14T00:10:08.036+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-14T00:10:08.045+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2026-03-14T00:10:08.140+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8383 (http)
+2026-03-14T00:10:08.140+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-14T00:10:08.140+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-14T00:10:08.164+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 249 ms
+2026-03-14T00:10:08.194+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-03-14T00:10:08.206+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ee6485
+2026-03-14T00:10:08.206+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-03-14T00:10:08.206+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-14T00:10:08.221+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-14T00:10:08.224+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transaction_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: transaction_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-14T00:10:08.241+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-14T00:10:08.241+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:10:08.270+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-14T00:10:08.338+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-14T00:10:08.345+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8383 (http) with context path '/'
+2026-03-14T00:10:08.346+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Started Application in 0.441 seconds (process running for 459.176)
+2026-03-14T00:10:08.347+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-14T00:10:08.347+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-14T00:10:08.347+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-14T00:10:11.088+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-14T00:10:11.088+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-14T00:10:11.089+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-14T00:10:11.117+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] c.m.m.t.client.AccountServiceClient      : 500  on GET request for "http://localhost:8282/accountsapi/accounts/account/111": "{"timestamp":"2026-03-13T18:40:11.116Z","status":500,"error":"Internal Server Error","trace":"java.lang.RuntimeException: Account not found\r\n\tat com.msedcl.main.account.service.AccountServiceImpl.lambda$0(AccountServiceImpl.java:45)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:403)\r\n\tat com.msedcl.main.account.service.AccountServiceImpl.getAccountById(AccountServiceImpl.java:45)\r\n\tat com.msedcl.main.account.controller.AccountController.getAccountById(AccountController.java:48)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:565)\r\n\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)\r\n\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)\r\n\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)\r\n\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)\r\n\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)\r\n\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)\r\n\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)\r\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)\r\n\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)\r\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)\r\n\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)\r\n\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)\r\n\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)\r\n\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)\r\n\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)\r\n\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)\r\n\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\r\n\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)\r\n\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\r\n\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)\r\n\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)\r\n\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\r\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)\r\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)\r\n\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1474)\r\n","message":"Account not found","path":"/accountsapi/accounts/account/111"}"
+2026-03-14T00:10:11.121+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.msedcl.main.transaction.exception.AccountNotFoundException: Invalid Account Number ::  111]
+2026-03-14T00:10:12.570+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-3] c.m.m.t.client.AccountServiceClient      : 500  on GET request for "http://localhost:8282/accountsapi/accounts/account/111": "{"timestamp":"2026-03-13T18:40:12.570Z","status":500,"error":"Internal Server Error","trace":"java.lang.RuntimeException: Account not found\r\n\tat com.msedcl.main.account.service.AccountServiceImpl.lambda$0(AccountServiceImpl.java:45)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:403)\r\n\tat com.msedcl.main.account.service.AccountServiceImpl.getAccountById(AccountServiceImpl.java:45)\r\n\tat com.msedcl.main.account.controller.AccountController.getAccountById(AccountController.java:48)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:565)\r\n\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)\r\n\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)\r\n\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)\r\n\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)\r\n\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)\r\n\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)\r\n\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)\r\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)\r\n\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)\r\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)\r\n\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\r\n\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)\r\n\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)\r\n\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)\r\n\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)\r\n\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)\r\n\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)\r\n\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\r\n\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)\r\n\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\r\n\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)\r\n\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)\r\n\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\r\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)\r\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)\r\n\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1474)\r\n","message":"Account not found","path":"/accountsapi/accounts/account/111"}"
+2026-03-14T00:10:12.572+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [http-nio-8383-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.msedcl.main.transaction.exception.AccountNotFoundException: Invalid Account Number ::  111]
+2026-03-14T00:11:54.684+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-14T00:11:54.685+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-33] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-14T00:11:54.690+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-14T00:11:54.692+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-33] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:11:54.692+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-33] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-03-14T00:11:54.695+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [Thread-33] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2026-03-14T00:11:54.735+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Starting Application using Java 25.0.1 with PID 22536 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\03_Transaction_Service)
+2026-03-14T00:11:54.735+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : No active profile set, falling back to 1 default profile: "default"
+2026-03-14T00:11:54.839+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-14T00:11:54.844+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-03-14T00:11:54.898+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8383 (http)
+2026-03-14T00:11:54.899+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-14T00:11:54.899+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-14T00:11:54.907+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 171 ms
+2026-03-14T00:11:54.934+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-03-14T00:11:54.952+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74710770
+2026-03-14T00:11:54.952+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-03-14T00:11:54.952+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-14T00:11:54.963+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-14T00:11:54.966+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transaction_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: transaction_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-14T00:11:54.982+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-14T00:11:54.982+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:11:55.031+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-14T00:11:55.106+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-14T00:11:55.114+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8383 (http) with context path '/'
+2026-03-14T00:11:55.115+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] c.msedcl.main.transaction.Application    : Started Application in 0.392 seconds (process running for 565.945)
+2026-03-14T00:11:55.115+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-14T00:11:55.115+05:30  WARN 22536 --- [TRANSACTION_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-14T00:11:55.116+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-14T00:12:39.628+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [RMI TCP Connection(44)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-14T00:12:39.628+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [RMI TCP Connection(44)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-14T00:12:39.640+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-14T00:12:39.643+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [RMI TCP Connection(44)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T00:12:39.643+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [RMI TCP Connection(44)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2026-03-14T00:12:39.645+05:30  INFO 22536 --- [TRANSACTION_SERVICE] [RMI TCP Connection(44)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
