@@ -43,9 +43,9 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
 	@ExceptionHandler(CustomerNotFoundException.class)
 	public ResponseEntity<ProblemDetail> handleEmployeeNotFoundException(
-			CustomerNotFoundException employeeNotFoundException) {
+			CustomerNotFoundException customerNotFoundException) {
 		ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.NOT_FOUND);
-		problemDetail.setDetail(employeeNotFoundException.getMessage());
+		problemDetail.setDetail(customerNotFoundException.getMessage());
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(problemDetail);
 	}
 

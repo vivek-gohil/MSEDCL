@@ -12,7 +12,7 @@
 	<artifactId>01_Customer_Service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>01_Customer_Service</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Spring Boot Customer Service</description>
 	<url/>
 	<licenses>
 		<license/>

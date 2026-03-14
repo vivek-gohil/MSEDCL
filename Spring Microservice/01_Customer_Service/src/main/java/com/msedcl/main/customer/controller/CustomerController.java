@@ -2,8 +2,9 @@ package com.msedcl.main.customer.controller;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,42 +18,49 @@ import com.msedcl.main.customer.dto.CustomerResponseDTO;
 import com.msedcl.main.customer.service.CustomerService;
 
 import jakarta.validation.Valid;
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
+@Validated
 @RestController
-@RequestMapping("/customersapi")
+@RequestMapping("customersapi")
+@AllArgsConstructor
 public class CustomerController {
+	private final CustomerService customerService;
 
-	@Autowired
-	private CustomerService service;
+	// Get customer by customerId
+	@GetMapping("customers/customer/{customerId}")
+	public ResponseEntity<ApiResponse<CustomerResponseDTO>> getCustomerByCustomerId(@PathVariable int customerId) {
+		CustomerResponseDTO customerResponseDTO = customerService.getCustomerById(customerId);
+		ApiResponse<CustomerResponseDTO> response = ApiResponse.<CustomerResponseDTO>builder().status("SUCCESS")
+				.message("Customer Details Retrieved Successfully").data(customerResponseDTO).build();
+		return ResponseEntity.status(HttpStatus.FOUND).body(response);
+	}
+	
+	@GetMapping("customers/customer/email/{email}")
+	public ResponseEntity<ApiResponse<CustomerResponseDTO>> getCustomerByEmail(@PathVariable String email) {
+		CustomerResponseDTO customerResponseDTO = customerService.getCustoemrByEmail(email);
+		ApiResponse<CustomerResponseDTO> response = ApiResponse.<CustomerResponseDTO>builder().status("SUCCESS")
+				.message("Customer Details Retrieved Successfully").data(customerResponseDTO).build();
+		return ResponseEntity.status(HttpStatus.FOUND).body(response);
+	}
 
-	/**
-	 * Create Customer
-	 */
+	// Create new customer
 	@PostMapping("customers/customer")
-	public ResponseEntity<ApiResponse<CustomerResponseDTO>> createCustomer(@Valid @RequestBody CustomerRequestDTO dto) {
-		CustomerResponseDTO customer = service.createCustomer(dto);
+	public ResponseEntity<ApiResponse<CustomerResponseDTO>> createNewCustomer(
+			@Valid @RequestBody CustomerRequestDTO customerRequestDTO) {
+		log.info(customerRequestDTO.toString());
+		CustomerResponseDTO customerResponseDTO = customerService.createCustomer(customerRequestDTO);
 		ApiResponse<CustomerResponseDTO> response = ApiResponse.<CustomerResponseDTO>builder().status("SUCCESS")
-				.message("Customer created successfully").data(customer).build();
-		return ResponseEntity.ok(response);
+				.message("New Customer Created Successfully").data(customerResponseDTO).build();
+		return ResponseEntity.status(HttpStatus.CREATED).body(response);
+
 	}
 
-	/**
-	 * Get Customer by ID
-	 */
-	@GetMapping("customers/customer/{id}")
-	public ResponseEntity<ApiResponse<CustomerResponseDTO>> getCustomerById(@PathVariable Integer id) {
-		CustomerResponseDTO customer = service.getCustomerById(id);
-		ApiResponse<CustomerResponseDTO> response = ApiResponse.<CustomerResponseDTO>builder().status("SUCCESS")
-				.message("Customer retrieved successfully").data(customer).build();
-		return ResponseEntity.ok(response);
-	}
-
-	/**
-	 * Get All Customers
-	 */
 	@GetMapping("customers")
 	public ResponseEntity<ApiResponse<List<CustomerResponseDTO>>> getAllCustomers() {
-		List<CustomerResponseDTO> customers = service.getAllCustomers();
+		List<CustomerResponseDTO> customers = customerService.getAllCustomers();
 		ApiResponse<List<CustomerResponseDTO>> response = ApiResponse.<List<CustomerResponseDTO>>builder()
 				.status("SUCCESS").message("Customers retrieved successfully").data(customers).build();
 		return ResponseEntity.ok(response);

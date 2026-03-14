@@ -9,7 +9,5 @@ import com.msedcl.main.customer.entity.Customer;
 
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Integer> {
-
 	Optional<Customer> findByEmail(String email);
-
 }

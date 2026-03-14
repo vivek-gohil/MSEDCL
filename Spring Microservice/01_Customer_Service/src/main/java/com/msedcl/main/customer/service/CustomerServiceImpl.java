@@ -30,11 +30,19 @@ public class CustomerServiceImpl implements CustomerService {
 	public CustomerResponseDTO getCustomerById(Integer id) {
 		Customer customer = repository.findById(id)
 				.orElseThrow(() -> new CustomerNotFoundException("Customer not found for customerId :: " + id));
+
 		return CustomerMapper.toDTO(customer);
 	}
 
 	@Override
 	public List<CustomerResponseDTO> getAllCustomers() {
 		return repository.findAll().stream().map(CustomerMapper::toDTO).toList();
+	}
+
+	@Override
+	public CustomerResponseDTO getCustoemrByEmail(String email) {
+		Customer customer = repository.findByEmail(email)
+				.orElseThrow(() -> new CustomerNotFoundException("Customer not found for emailId :: " + email));
+		return CustomerMapper.toDTO(customer);
 	}
 }

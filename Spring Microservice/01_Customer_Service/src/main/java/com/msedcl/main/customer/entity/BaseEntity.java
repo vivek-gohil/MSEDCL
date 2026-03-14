@@ -1,39 +1,36 @@
 package com.msedcl.main.customer.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.EntityListeners;
-import jakarta.persistence.MappedSuperclass;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import java.time.LocalDateTime;
+
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import java.time.LocalDateTime;
+import jakarta.persistence.Column;
+import jakarta.persistence.EntityListeners;
+import jakarta.persistence.MappedSuperclass;
+import lombok.Data;
 
+@Data
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
-@Getter
-@Setter
-@ToString
 public class BaseEntity {
 
 	@CreatedDate
-	@Column(updatable = false)
+	@Column(name = "created_at", updatable = false)
 	private LocalDateTime createdAt;
 
 	@CreatedBy
-	@Column(updatable = false)
-	private String createdBy;
+	@Column(name = "created_by", updatable = false)
+	private String createBy;
 
 	@LastModifiedDate
-	@Column(insertable = false)
+	@Column(name = "updated_at", insertable = false)
 	private LocalDateTime updatedAt;
 
 	@LastModifiedBy
-	@Column(insertable = false)
-	private String updatedBy;
+	@Column(name = "updated_by", insertable = false)
+	private String updateBy;
 }

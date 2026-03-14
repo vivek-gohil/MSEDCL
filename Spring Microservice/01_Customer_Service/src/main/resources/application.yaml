@@ -1,15 +1,13 @@
 spring:
     application:
-        name: CUSTOMER_SERVICE
+        name: CUSTOMER-SERVICE
     datasource:
-        url: jdbc:mysql://localhost:3306/customer_db
-        username: root
-        password: root
         driver-class-name: com.mysql.cj.jdbc.Driver
-
+        username: root
+        password: root123
+        url: jdbc:mysql://localhost:3306/customer_db
 server:
     port: 8181
-
 logging:
     file:
-        name: logs/customer.log
+        name: logs/customers.log
