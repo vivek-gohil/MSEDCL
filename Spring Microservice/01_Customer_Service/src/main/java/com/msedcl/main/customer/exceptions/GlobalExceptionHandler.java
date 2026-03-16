@@ -1,5 +1,6 @@
 package com.msedcl.main.customer.exceptions;
 
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -16,6 +17,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+import com.msedcl.main.customer.dto.ErrorResponseDTO;
 
 import jakarta.annotation.Nullable;
 
@@ -42,11 +45,17 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 	}
 
 	@ExceptionHandler(CustomerNotFoundException.class)
-	public ResponseEntity<ProblemDetail> handleEmployeeNotFoundException(
-			CustomerNotFoundException customerNotFoundException) {
-		ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.NOT_FOUND);
-		problemDetail.setDetail(customerNotFoundException.getMessage());
-		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(problemDetail);
+	public ResponseEntity<ErrorResponseDTO> handleEmployeeNotFoundException(
+			CustomerNotFoundException customerNotFoundException, WebRequest request) {
+//		ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.NOT_FOUND);
+//		problemDetail.setDetail(customerNotFoundException.getMessage());
+		ErrorResponseDTO errorResponseDTO = new ErrorResponseDTO();
+		errorResponseDTO.setApiPath(request.getDescription(false));
+		errorResponseDTO.setErrorMessage("Invalid CustomerId");
+		errorResponseDTO.setStatus(HttpStatus.NOT_FOUND);
+		errorResponseDTO.setErrorTime(LocalDateTime.now());
+
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponseDTO);
 	}
 
 }
