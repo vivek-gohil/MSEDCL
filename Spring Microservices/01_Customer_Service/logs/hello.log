@@ -1,0 +1,533 @@
+2026-03-13T21:18:23.354+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 12916 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service)
+2026-03-13T21:18:23.356+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T21:18:23.376+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-13T21:18:23.376+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-13T21:18:23.810+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T21:18:23.835+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
+2026-03-13T21:18:24.062+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8181 (http)
+2026-03-13T21:18:24.070+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T21:18:24.070+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13T21:18:24.090+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 714 ms
+2026-03-13T21:18:24.185+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-13T21:18:24.372+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7171a2c5
+2026-03-13T21:18:24.373+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-13T21:18:24.387+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13T21:18:24.410+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-13T21:18:24.630+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T21:18:24.685+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13T21:18:25.077+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13T21:18:25.080+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:18:25.116+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-13T21:18:25.231+05:30  WARN 12916 --- [CUSTOMER_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T21:18:25.497+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-13T21:18:25.533+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8181 (http) with context path '/'
+2026-03-13T21:18:25.537+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 2.37 seconds (process running for 2.655)
+2026-03-13T21:18:25.541+05:30  WARN 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-13T21:18:25.541+05:30  WARN 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-13T21:18:25.690+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-13T21:18:25.690+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-13T21:18:25.691+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-13T21:20:49.159+05:30  WARN 12916 --- [CUSTOMER_SERVICE] [http-nio-8181-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "com.msedcl.main.customer.service.CustomerService.createCustomer(com.msedcl.main.customer.dto.CustomerRequestDTO)" because "this.customerService" is null]
+2026-03-13T21:21:05.016+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-13T21:21:05.018+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13T21:21:05.023+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-13T21:21:05.025+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:21:05.027+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-13T21:21:05.031+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-13T21:21:05.083+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 12916 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service)
+2026-03-13T21:21:05.083+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T21:21:05.189+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T21:21:05.195+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-03-13T21:21:05.247+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8181 (http)
+2026-03-13T21:21:05.248+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T21:21:05.249+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13T21:21:05.258+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 173 ms
+2026-03-13T21:21:05.284+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-03-13T21:21:05.299+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c2c4ce3
+2026-03-13T21:21:05.299+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-03-13T21:21:05.300+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13T21:21:05.317+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T21:21:05.321+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13T21:21:05.341+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13T21:21:05.341+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:21:05.374+05:30  WARN 12916 --- [CUSTOMER_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T21:21:05.458+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-13T21:21:05.467+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8181 (http) with context path '/'
+2026-03-13T21:21:05.469+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 0.398 seconds (process running for 162.587)
+2026-03-13T21:21:05.470+05:30  WARN 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-13T21:21:05.470+05:30  WARN 12916 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-13T21:21:05.471+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-13T21:21:09.360+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [http-nio-8181-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-13T21:21:09.361+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [http-nio-8181-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-13T21:21:09.362+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [http-nio-8181-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-13T21:21:09.429+05:30  WARN 12916 --- [CUSTOMER_SERVICE] [http-nio-8181-exec-3] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 1048, SQLState: 23000
+2026-03-13T21:21:09.429+05:30  WARN 12916 --- [CUSTOMER_SERVICE] [http-nio-8181-exec-3] org.hibernate.orm.jdbc.error             : Column 'created_at' cannot be null
+2026-03-13T21:21:09.444+05:30  WARN 12916 --- [CUSTOMER_SERVICE] [http-nio-8181-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [Column 'created_at' cannot be null] [insert into customer_details (created_at,created_by,email,mobile_number,name) values (?,?,?,?,?)]; SQL [insert into customer_details (created_at,created_by,email,mobile_number,name) values (?,?,?,?,?)]; constraint [created_at]]
+2026-03-13T21:21:38.392+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-13T21:21:38.392+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [RMI TCP Connection(17)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13T21:21:38.396+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-13T21:21:38.397+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:21:38.398+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-03-13T21:21:38.401+05:30  INFO 12916 --- [CUSTOMER_SERVICE] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-03-13T21:23:05.194+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 13860 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service)
+2026-03-13T21:23:05.195+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T21:23:05.216+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-13T21:23:05.216+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-13T21:23:05.624+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T21:23:05.647+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+2026-03-13T21:23:05.901+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8181 (http)
+2026-03-13T21:23:05.907+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T21:23:05.907+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13T21:23:05.928+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 710 ms
+2026-03-13T21:23:06.029+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-13T21:23:06.201+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17295d2f
+2026-03-13T21:23:06.202+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-13T21:23:06.215+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13T21:23:06.237+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-13T21:23:06.435+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T21:23:06.491+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13T21:23:06.862+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13T21:23:06.866+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:23:06.900+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-13T21:23:07.026+05:30  WARN 13860 --- [CUSTOMER_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T21:23:07.288+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-13T21:23:07.324+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8181 (http) with context path '/'
+2026-03-13T21:23:07.329+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 2.321 seconds (process running for 2.601)
+2026-03-13T21:23:07.332+05:30  WARN 13860 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-13T21:23:07.332+05:30  WARN 13860 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-13T21:23:07.909+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-13T21:23:07.909+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-13T21:23:07.911+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-13T21:23:22.947+05:30  WARN 13860 --- [CUSTOMER_SERVICE] [http-nio-8181-exec-2] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 1364, SQLState: HY000
+2026-03-13T21:23:22.947+05:30  WARN 13860 --- [CUSTOMER_SERVICE] [http-nio-8181-exec-2] org.hibernate.orm.jdbc.error             : Field 'updated_at' doesn't have a default value
+2026-03-13T21:23:22.973+05:30  WARN 13860 --- [CUSTOMER_SERVICE] [http-nio-8181-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [Field 'updated_at' doesn't have a default value] [insert into customer_details (created_at,created_by,email,mobile_number,name) values (?,?,?,?,?)]; SQL [insert into customer_details (created_at,created_by,email,mobile_number,name) values (?,?,?,?,?)]; constraint [updated_at]]
+2026-03-13T21:24:59.096+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-13T21:24:59.098+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [RMI TCP Connection(12)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13T21:24:59.103+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-13T21:24:59.106+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:24:59.108+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-13T21:24:59.111+05:30  INFO 13860 --- [CUSTOMER_SERVICE] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-13T21:25:00.192+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 35616 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service)
+2026-03-13T21:25:00.193+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T21:25:00.222+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-13T21:25:00.222+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-13T21:25:00.648+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T21:25:00.674+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interface.
+2026-03-13T21:25:00.958+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8181 (http)
+2026-03-13T21:25:00.965+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T21:25:00.966+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13T21:25:00.987+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 765 ms
+2026-03-13T21:25:01.094+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-13T21:25:01.269+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10a5958f
+2026-03-13T21:25:01.270+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-13T21:25:01.283+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13T21:25:01.308+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-13T21:25:01.524+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T21:25:01.576+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13T21:25:01.978+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13T21:25:01.982+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:25:02.020+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-13T21:25:02.163+05:30  WARN 35616 --- [CUSTOMER_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T21:25:02.445+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-13T21:25:02.493+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8181 (http) with context path '/'
+2026-03-13T21:25:02.498+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 2.507 seconds (process running for 2.8)
+2026-03-13T21:25:02.501+05:30  WARN 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-13T21:25:02.502+05:30  WARN 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-13T21:25:02.808+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-13T21:25:02.808+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-13T21:25:02.809+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-13T21:28:54.717+05:30  WARN 35616 --- [CUSTOMER_SERVICE] [http-nio-8181-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Customer not found]
+2026-03-13T21:31:20.482+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-03-13T21:31:20.485+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13T21:31:20.490+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-13T21:31:20.493+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:31:20.495+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-13T21:31:20.498+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-13T21:31:20.559+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 35616 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service)
+2026-03-13T21:31:20.560+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T21:31:20.670+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T21:31:20.675+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2026-03-13T21:31:20.721+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8181 (http)
+2026-03-13T21:31:20.721+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T21:31:20.721+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13T21:31:20.731+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 170 ms
+2026-03-13T21:31:20.753+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-03-13T21:31:20.767+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59b54382
+2026-03-13T21:31:20.767+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-03-13T21:31:20.768+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13T21:31:20.778+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T21:31:20.781+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13T21:31:20.800+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13T21:31:20.800+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:31:20.845+05:30  WARN 35616 --- [CUSTOMER_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T21:31:20.919+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-13T21:31:20.933+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8181 (http) with context path '/'
+2026-03-13T21:31:20.935+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 0.387 seconds (process running for 381.237)
+2026-03-13T21:31:20.936+05:30  WARN 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-13T21:31:20.936+05:30  WARN 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-13T21:31:20.937+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-13T21:31:32.768+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2026-03-13T21:31:32.769+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [Thread-5] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13T21:31:32.774+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-13T21:31:32.775+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:31:32.776+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-03-13T21:31:32.778+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-03-13T21:31:32.829+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 35616 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service)
+2026-03-13T21:31:32.829+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T21:31:32.922+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T21:31:32.928+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2026-03-13T21:31:32.971+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8181 (http)
+2026-03-13T21:31:32.971+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T21:31:32.971+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13T21:31:32.979+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 149 ms
+2026-03-13T21:31:32.999+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-03-13T21:31:33.011+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25729290
+2026-03-13T21:31:33.011+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-03-13T21:31:33.011+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13T21:31:33.021+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T21:31:33.024+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13T21:31:33.041+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13T21:31:33.042+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:31:33.075+05:30  WARN 35616 --- [CUSTOMER_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T21:31:33.135+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-13T21:31:33.143+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8181 (http) with context path '/'
+2026-03-13T21:31:33.144+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 0.325 seconds (process running for 393.446)
+2026-03-13T21:31:33.145+05:30  WARN 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-13T21:31:33.145+05:30  WARN 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-13T21:31:33.145+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-13T21:33:22.269+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-13T21:33:22.271+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [Thread-9] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13T21:33:22.275+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-13T21:33:22.276+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:33:22.277+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-03-13T21:33:22.281+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-03-13T21:33:22.330+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 35616 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service)
+2026-03-13T21:33:22.330+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T21:33:22.420+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T21:33:22.425+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-03-13T21:33:22.467+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8181 (http)
+2026-03-13T21:33:22.468+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T21:33:22.468+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13T21:33:22.476+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 146 ms
+2026-03-13T21:33:22.496+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-03-13T21:33:22.508+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@784a72fb
+2026-03-13T21:33:22.508+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-03-13T21:33:22.508+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13T21:33:22.518+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T21:33:22.520+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13T21:33:22.551+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13T21:33:22.552+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:33:22.583+05:30  WARN 35616 --- [CUSTOMER_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T21:33:22.643+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-13T21:33:22.651+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8181 (http) with context path '/'
+2026-03-13T21:33:22.653+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 0.333 seconds (process running for 502.955)
+2026-03-13T21:33:22.654+05:30  WARN 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-13T21:33:22.654+05:30  WARN 35616 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-13T21:33:22.655+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-13T21:33:26.320+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [RMI TCP Connection(27)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-13T21:33:26.321+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [RMI TCP Connection(27)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13T21:33:26.325+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-13T21:33:26.327+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [RMI TCP Connection(27)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:33:26.327+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [RMI TCP Connection(27)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-03-13T21:33:26.329+05:30  INFO 35616 --- [CUSTOMER_SERVICE] [RMI TCP Connection(27)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-03-13T21:34:21.707+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 38844 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service)
+2026-03-13T21:34:21.709+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T21:34:21.730+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-13T21:34:21.730+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-13T21:34:22.145+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T21:34:22.168+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+2026-03-13T21:34:22.422+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8181 (http)
+2026-03-13T21:34:22.429+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T21:34:22.429+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13T21:34:22.449+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 719 ms
+2026-03-13T21:34:22.548+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-13T21:34:22.704+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69b623af
+2026-03-13T21:34:22.705+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-13T21:34:22.717+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13T21:34:22.740+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-13T21:34:22.932+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T21:34:22.982+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13T21:34:23.344+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13T21:34:23.348+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:34:23.383+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-13T21:34:23.504+05:30  WARN 38844 --- [CUSTOMER_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T21:34:23.761+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-13T21:34:23.800+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8181 (http) with context path '/'
+2026-03-13T21:34:23.805+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 2.275 seconds (process running for 2.557)
+2026-03-13T21:34:23.807+05:30  WARN 38844 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-13T21:34:23.807+05:30  WARN 38844 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-13T21:34:23.929+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [RMI TCP Connection(11)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-13T21:34:23.929+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-13T21:34:23.930+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-13T21:34:27.789+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-13T21:34:27.791+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [RMI TCP Connection(10)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13T21:34:27.795+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-13T21:34:27.798+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:34:27.800+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-13T21:34:27.803+05:30  INFO 38844 --- [CUSTOMER_SERVICE] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-13T21:35:43.776+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 16624 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service)
+2026-03-13T21:35:43.777+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T21:35:43.805+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-13T21:35:43.805+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-13T21:35:44.259+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T21:35:44.287+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2026-03-13T21:35:44.594+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8181 (http)
+2026-03-13T21:35:44.601+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T21:35:44.601+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13T21:35:44.622+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 817 ms
+2026-03-13T21:35:44.732+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-13T21:35:44.904+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38468cec
+2026-03-13T21:35:44.905+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-13T21:35:44.920+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13T21:35:44.946+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-13T21:35:45.185+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T21:35:45.240+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13T21:35:45.673+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13T21:35:45.678+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:35:45.717+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-13T21:35:45.853+05:30  WARN 16624 --- [CUSTOMER_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T21:35:46.141+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-13T21:35:46.181+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8181 (http) with context path '/'
+2026-03-13T21:35:46.186+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 2.626 seconds (process running for 3.049)
+2026-03-13T21:35:46.189+05:30  WARN 16624 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-13T21:35:46.189+05:30  WARN 16624 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-13T21:35:46.768+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [RMI TCP Connection(6)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-13T21:35:46.768+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-13T21:35:46.768+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-13T21:35:49.074+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-13T21:35:49.077+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [RMI TCP Connection(10)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13T21:35:49.081+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-13T21:35:49.084+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:35:49.086+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-13T21:35:49.089+05:30  INFO 16624 --- [CUSTOMER_SERVICE] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-13T21:35:50.150+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 33312 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service)
+2026-03-13T21:35:50.151+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T21:35:50.177+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-13T21:35:50.177+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-13T21:35:50.585+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T21:35:50.610+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
+2026-03-13T21:35:50.877+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8181 (http)
+2026-03-13T21:35:50.883+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T21:35:50.883+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13T21:35:50.912+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 735 ms
+2026-03-13T21:35:51.013+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-13T21:35:51.176+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a8e1ace
+2026-03-13T21:35:51.177+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-13T21:35:51.190+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13T21:35:51.212+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-13T21:35:51.402+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T21:35:51.449+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13T21:35:51.822+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13T21:35:51.825+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:35:51.863+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-13T21:35:51.988+05:30  WARN 33312 --- [CUSTOMER_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T21:35:52.249+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-13T21:35:52.285+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8181 (http) with context path '/'
+2026-03-13T21:35:52.289+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 2.331 seconds (process running for 2.62)
+2026-03-13T21:35:52.293+05:30  WARN 33312 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-13T21:35:52.293+05:30  WARN 33312 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-13T21:35:52.384+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-13T21:35:52.384+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-13T21:35:52.385+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-13T21:50:59.171+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [RMI TCP Connection(25)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-13T21:50:59.173+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [RMI TCP Connection(25)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13T21:50:59.179+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-13T21:50:59.182+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [RMI TCP Connection(25)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T21:50:59.184+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [RMI TCP Connection(25)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-13T21:50:59.187+05:30  INFO 33312 --- [CUSTOMER_SERVICE] [RMI TCP Connection(25)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-13T22:17:00.701+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 26340 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service)
+2026-03-13T22:17:00.702+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T22:17:00.724+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-13T22:17:00.724+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-13T22:17:01.177+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T22:17:01.202+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
+2026-03-13T22:17:01.468+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8181 (http)
+2026-03-13T22:17:01.473+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T22:17:01.475+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13T22:17:01.494+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 770 ms
+2026-03-13T22:17:01.599+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-13T22:17:01.761+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56d0d77c
+2026-03-13T22:17:01.761+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-13T22:17:01.776+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13T22:17:01.798+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-13T22:17:01.995+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T22:17:02.048+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13T22:17:02.431+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13T22:17:02.434+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T22:17:02.468+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-13T22:17:02.593+05:30  WARN 26340 --- [CUSTOMER_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T22:17:02.866+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-13T22:17:02.903+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8181 (http) with context path '/'
+2026-03-13T22:17:02.907+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 2.391 seconds (process running for 2.681)
+2026-03-13T22:17:02.911+05:30  WARN 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-13T22:17:02.911+05:30  WARN 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-13T22:17:03.549+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [RMI TCP Connection(11)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-13T22:17:03.549+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-13T22:17:03.549+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-13T22:18:29.861+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2026-03-13T22:18:29.863+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13T22:18:29.869+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-13T22:18:29.873+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T22:18:29.875+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-13T22:18:29.878+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-13T22:18:29.933+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 26340 (C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service\target\classes started by bornt in C:\Users\bornt\OneDrive\Documents\MSCB Training\Spring Microservices\01_Customer_Service)
+2026-03-13T22:18:29.933+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T22:18:30.037+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T22:18:30.044+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2026-03-13T22:18:30.089+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8181 (http)
+2026-03-13T22:18:30.089+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T22:18:30.089+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13T22:18:30.099+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 165 ms
+2026-03-13T22:18:30.122+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-03-13T22:18:30.135+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@660d13e5
+2026-03-13T22:18:30.135+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-03-13T22:18:30.136+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13T22:18:30.147+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T22:18:30.151+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13T22:18:30.174+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13T22:18:30.175+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T22:18:30.209+05:30  WARN 26340 --- [CUSTOMER_SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T22:18:30.288+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-13T22:18:30.296+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8181 (http) with context path '/'
+2026-03-13T22:18:30.298+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 0.376 seconds (process running for 90.071)
+2026-03-13T22:18:30.299+05:30  WARN 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-13T22:18:30.299+05:30  WARN 26340 --- [CUSTOMER_SERVICE] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-13T22:18:30.299+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-13T22:18:48.810+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-13T22:18:48.812+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [Thread-5] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13T22:18:48.815+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-13T22:18:48.818+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T22:18:48.818+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-03-13T22:18:48.821+05:30  INFO 26340 --- [CUSTOMER_SERVICE] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
