@@ -9,10 +9,10 @@ import lombok.Setter;
 @Setter
 public class AccountRequestDTO {
 
-	@NotNull
+	@NotNull(message = "CustomerId is required")
 	private Integer customerId;
 
-	@NotBlank
+	@NotBlank(message = "Account type cannot be blank")
 	private String accountType;
 
 }

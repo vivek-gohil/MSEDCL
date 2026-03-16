@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.msedcl.main.account.dto.AccountRequestDTO;
 import com.msedcl.main.account.dto.AccountResponseDTO;
+import com.msedcl.main.account.dto.BalanceUpdateRequestDTO;
 
 public interface AccountService {
 
@@ -13,4 +14,5 @@ public interface AccountService {
 
 	List<AccountResponseDTO> getAccountsByCustomer(Integer customerId);
 
+	AccountResponseDTO updateAccountBalance(BalanceUpdateRequestDTO balanceUpdateRequestDTO);
 }

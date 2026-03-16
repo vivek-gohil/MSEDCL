@@ -12,7 +12,7 @@ import lombok.Setter;
 public class AccountResponseDTO {
 
 	private Integer accountId;
-	private Integer customerId;
+	private CustomerResponseDTO customer;
 	private String accountType;
 	private Double balance;
 

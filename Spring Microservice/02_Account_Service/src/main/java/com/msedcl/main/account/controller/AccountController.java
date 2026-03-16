@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.msedcl.main.account.common.ApiResponse;
 import com.msedcl.main.account.dto.AccountRequestDTO;
 import com.msedcl.main.account.dto.AccountResponseDTO;
+import com.msedcl.main.account.dto.BalanceUpdateRequestDTO;
 import com.msedcl.main.account.service.AccountService;
 
 import jakarta.validation.Valid;
@@ -32,10 +34,8 @@ public class AccountController {
 	public ResponseEntity<ApiResponse<AccountResponseDTO>> createAccount(@Valid @RequestBody AccountRequestDTO dto) {
 
 		AccountResponseDTO account = service.createAccount(dto);
-
 		ApiResponse<AccountResponseDTO> response = ApiResponse.<AccountResponseDTO>builder().status("SUCCESS")
 				.message("Account created successfully").data(account).build();
-
 		return ResponseEntity.ok(response);
 	}
 
@@ -44,12 +44,9 @@ public class AccountController {
 	 */
 	@GetMapping("accounts/account/{accountId}")
 	public ResponseEntity<ApiResponse<AccountResponseDTO>> getAccountById(@PathVariable Integer accountId) {
-
 		AccountResponseDTO account = service.getAccountById(accountId);
-
 		ApiResponse<AccountResponseDTO> response = ApiResponse.<AccountResponseDTO>builder().status("SUCCESS")
 				.message("Account retrieved successfully").data(account).build();
-
 		return ResponseEntity.ok(response);
 	}
 
@@ -59,11 +56,20 @@ public class AccountController {
 	@GetMapping("accounts/customer/{customerId}")
 	public ResponseEntity<ApiResponse<List<AccountResponseDTO>>> getAccountsByCustomer(
 			@PathVariable Integer customerId) {
-
 		List<AccountResponseDTO> accounts = service.getAccountsByCustomer(customerId);
-
 		ApiResponse<List<AccountResponseDTO>> response = ApiResponse.<List<AccountResponseDTO>>builder()
 				.status("SUCCESS").message("Accounts retrieved successfully").data(accounts).build();
+		return ResponseEntity.ok(response);
+	}
+
+	@PutMapping("accounts/account/balance")
+	public ResponseEntity<ApiResponse<AccountResponseDTO>> updateAccountBalance(
+			@Valid @RequestBody BalanceUpdateRequestDTO request) {
+
+		AccountResponseDTO account = service.updateAccountBalance(request);
+
+		ApiResponse<AccountResponseDTO> response = ApiResponse.<AccountResponseDTO>builder().status("SUCCESS")
+				.message("Account balance updated successfully").data(account).build();
 
 		return ResponseEntity.ok(response);
 	}

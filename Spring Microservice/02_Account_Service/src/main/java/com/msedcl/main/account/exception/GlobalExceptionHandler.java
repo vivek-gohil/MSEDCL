@@ -1,5 +1,6 @@
 package com.msedcl.main.account.exception;
 
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -7,7 +8,6 @@ import java.util.Map;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
-import org.springframework.http.ProblemDetail;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.validation.ObjectError;
@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+import com.msedcl.main.account.dto.ErrorResponseDTO;
 
 import jakarta.annotation.Nullable;
 
@@ -42,18 +44,25 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 	}
 
 	@ExceptionHandler(AccountNotFoundException.class)
-	public ResponseEntity<ProblemDetail> handleAccountNotFoundException(
-			AccountNotFoundException employeeNotFoundException) {
-		ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.NOT_FOUND);
-		problemDetail.setDetail(employeeNotFoundException.getMessage());
-		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(problemDetail);
+	public ResponseEntity<ErrorResponseDTO> handleAccountNotFoundException(
+			AccountNotFoundException employeeNotFoundException, WebRequest request) {
+		ErrorResponseDTO errorResponseDTO = new ErrorResponseDTO();
+		errorResponseDTO.setApiPath(request.getDescription(false));
+		errorResponseDTO.setErrorMessage("Invalid AccountId");
+		errorResponseDTO.setStatus(HttpStatus.NOT_FOUND);
+		errorResponseDTO.setErrorTime(LocalDateTime.now());
+
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponseDTO);
 	}
 
 	@ExceptionHandler(CustomerNotFoundException.class)
-	public ResponseEntity<ProblemDetail> handleCustomerNotFoundException(
-			CustomerNotFoundException customerNotFoundException) {
-		ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.NOT_FOUND);
-		problemDetail.setDetail(customerNotFoundException.getMessage());
-		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(problemDetail);
+	public ResponseEntity<ErrorResponseDTO> handleCustomerNotFoundException(
+			CustomerNotFoundException customerNotFoundException, WebRequest request) {
+		ErrorResponseDTO errorResponseDTO = new ErrorResponseDTO();
+		errorResponseDTO.setApiPath(request.getDescription(false));
+		errorResponseDTO.setErrorMessage("Invalid CustomerId");
+		errorResponseDTO.setStatus(HttpStatus.NOT_FOUND);
+		errorResponseDTO.setErrorTime(LocalDateTime.now());
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponseDTO);
 	}
 }

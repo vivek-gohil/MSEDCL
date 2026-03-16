@@ -2,6 +2,7 @@ package com.msedcl.main.account.mapper;
 
 import com.msedcl.main.account.dto.AccountRequestDTO;
 import com.msedcl.main.account.dto.AccountResponseDTO;
+import com.msedcl.main.account.dto.CustomerResponseDTO;
 import com.msedcl.main.account.entity.Account;
 
 public class AccountMapper {
@@ -16,9 +17,8 @@ public class AccountMapper {
 		return account;
 	}
 
-	public static AccountResponseDTO toDTO(Account account) {
-
-		return new AccountResponseDTO(account.getAccountId(), account.getCustomerId(), account.getAccountType(),
+	public static AccountResponseDTO toDTO(Account account, CustomerResponseDTO customerResponseDTO) {
+		return new AccountResponseDTO(account.getAccountId(), customerResponseDTO, account.getAccountType(),
 				account.getBalance());
 	}
 

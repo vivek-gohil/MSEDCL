@@ -9,7 +9,6 @@ import com.msedcl.main.account.entity.Account;
 
 @Repository
 public interface AccountRepository extends JpaRepository<Account, Integer> {
-
 	List<Account> findByCustomerId(Integer customerId);
 
 }

@@ -17,11 +17,8 @@ public class Account extends BaseEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer accountId;
-
 	private Integer customerId;
-
 	private String accountType;
-
 	private Double balance;
 
 }

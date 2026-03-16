@@ -7,15 +7,9 @@ import org.springframework.stereotype.Component;
 
 @Component("auditAwareImpl")
 public class AuditAwareImpl implements AuditorAware<String> {
-
-	/**
-	 * Returns the current auditor of the application.
-	 *
-	 * @return the current auditor.
-	 */
 	@Override
 	public Optional<String> getCurrentAuditor() {
-		return Optional.of("ACCOUNT_MS");
+		// GET CURRENT LOGGEDIN USER DETAILS
+		return Optional.of("ACCOUNT-MS");
 	}
-
 }
