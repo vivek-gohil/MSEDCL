@@ -1,0 +1,40 @@
+2026-03-24T00:11:20.973+05:30  INFO 24316 --- [CUSTOMER-SERVICE] [main] c.m.m.customer.CustomerControllerTest    : Starting CustomerControllerTest using Java 17.0.12 with PID 24316 (started by bornt in F:\Training\MSEDCL\Testing\Test)
+2026-03-24T00:11:20.977+05:30  INFO 24316 --- [CUSTOMER-SERVICE] [main] c.m.m.customer.CustomerControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2026-03-24T00:11:22.623+05:30  INFO 24316 --- [CUSTOMER-SERVICE] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-24T00:11:22.623+05:30  INFO 24316 --- [CUSTOMER-SERVICE] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-24T00:11:22.625+05:30  INFO 24316 --- [CUSTOMER-SERVICE] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-03-24T00:11:22.673+05:30  INFO 24316 --- [CUSTOMER-SERVICE] [main] c.m.m.customer.CustomerControllerTest    : Started CustomerControllerTest in 1.919 seconds (process running for 2.39)
+2026-03-24T00:11:22.896+05:30  WARN 24316 --- [CUSTOMER-SERVICE] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.msedcl.main.customer.dto.CustomerDTO> com.msedcl.main.customer.controller.CustomerController.create(com.msedcl.main.customer.dto.CustomerDTO): [Field error in object 'customerDTO' on field 'name': rejected value [null]; codes [NotBlank.customerDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [customerDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] ]
+2026-03-24T00:22:06.546+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] c.m.main.customer.TestApplicationTests   : Starting TestApplicationTests using Java 17.0.12 with PID 38984 (started by bornt in F:\Training\MSEDCL\Testing\Test)
+2026-03-24T00:22:06.547+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] c.m.main.customer.TestApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2026-03-24T00:22:07.159+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-24T00:22:07.177+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2026-03-24T00:22:07.454+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-24T00:22:07.675+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b3ad7ca
+2026-03-24T00:22:07.677+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-24T00:22:07.724+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-24T00:22:07.755+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.44.Final
+2026-03-24T00:22:07.773+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-24T00:22:07.921+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-24T00:22:07.976+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-24T00:22:08.134+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-24T00:22:08.137+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-24T00:22:09.051+05:30  WARN 38984 --- [CUSTOMER-SERVICE] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-24T00:22:10.268+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-24T00:22:10.268+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-24T00:22:10.275+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-24T00:22:10.292+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 23 ms
+2026-03-24T00:22:10.431+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [main] c.m.main.customer.TestApplicationTests   : Started TestApplicationTests in 4.104 seconds (process running for 4.619)
+2026-03-24T00:22:10.480+05:30  WARN 38984 --- [CUSTOMER-SERVICE] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-24T00:22:10.481+05:30  WARN 38984 --- [CUSTOMER-SERVICE] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-24T00:22:10.859+05:30  WARN 38984 --- [CUSTOMER-SERVICE] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.msedcl.main.customer.dto.CustomerDTO> com.msedcl.main.customer.controller.CustomerController.create(com.msedcl.main.customer.dto.CustomerDTO): [Field error in object 'customerDTO' on field 'name': rejected value [null]; codes [NotBlank.customerDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [customerDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] ]
+2026-03-24T00:22:10.940+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-24T00:22:10.943+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-24T00:22:10.952+05:30  INFO 38984 --- [CUSTOMER-SERVICE] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
