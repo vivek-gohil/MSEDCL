@@ -1,0 +1,43 @@
+spring:
+    application:
+        name: "customer"
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: root
+        password: root
+        url: jdbc:mysql://localhost:3306/customer_db
+    config:
+        import: "optional:configserver:http://localhost:8071"
+server:
+    port: 8181
+logging:
+    file:
+        name: logs/customers.log
+# Actuator Configuration
+management:
+    endpoints:
+        web:
+            base-path: /actuator
+            exposure:
+                include: health,info,metrics,env,beans,mappings,transaction-metrics,refresh
+
+    endpoint:
+        health:
+            show-details: always
+            show-components: always
+
+    health:
+        defaults:
+            enabled: true
+
+    info:
+        env:
+            enabled: true
+eureka:
+    instance:
+        prefer-ip-address: true
+    client:
+        fetch-registry: true
+        register-with-eureka: true
+        service-url:
+            defaultZone: http://localhost:8070/eureka/
