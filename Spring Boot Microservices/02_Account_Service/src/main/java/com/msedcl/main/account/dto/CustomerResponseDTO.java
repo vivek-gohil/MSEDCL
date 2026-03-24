@@ -1,0 +1,21 @@
+package com.msedcl.main.account.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@ToString
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class CustomerResponseDTO {
+
+	private Integer customerId;
+	private String name;
+	private String email;
+	private String mobileNumber;
+
+}
