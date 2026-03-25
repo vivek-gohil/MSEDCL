@@ -1,0 +1,612 @@
+{
+  "info": {
+    "_postman_id": "cd966f8a-7065-4a62-8426-5f685a4605a2",
+    "name": "Banking-MSEDCL",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "6913289",
+    "_collection_link": "https://go.postman.co/collection/6913289-cd966f8a-7065-4a62-8426-5f685a4605a2?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Customer",
+      "item": [
+        {
+          "name": "CreateCustomer",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\":\"Durgesh\",\r\n    \"email\":\"durgesh.r@msedcl.in\",\r\n    \"mobileNumber\": \"9876543210\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8181/customersapi/customers/customer",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8181",
+              "path": [
+                "customersapi",
+                "customers",
+                "customer"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetCustomerByCustomerId",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\":\"Laxman\",\r\n    \"email\":\"laxman.jadhav@msedcl.in\",\r\n    \"mobileNumber\": \"12312312\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8181/customersapi/customers/customer/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8181",
+              "path": [
+                "customersapi",
+                "customers",
+                "customer",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetCustomerByEmail",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8181/customersapi/customers/customer/email/laxman.jadhav@msedcl.in",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8181",
+              "path": [
+                "customersapi",
+                "customers",
+                "customer",
+                "email",
+                "laxman.jadhav@msedcl.in"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetAllCustomers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8181/customersapi/customers",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8181",
+              "path": [
+                "customersapi",
+                "customers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ContactInfo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8181/customersapi/contact-info",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8181",
+              "path": [
+                "customersapi",
+                "contact-info"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "BuildInfo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8181/customersapi/build-info",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8181",
+              "path": [
+                "customersapi",
+                "build-info"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "JavaVersion",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8181/customersapi/java-version",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8181",
+              "path": [
+                "customersapi",
+                "java-version"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ContactInfo",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "Refresh",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8181/actuator/refresh",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8181",
+              "path": [
+                "actuator",
+                "refresh"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Account",
+      "item": [
+        {
+          "name": "CreateAccount",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"customerId\": 1,\r\n    \"accountType\": \"Savings\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8282/accountsapi/accounts/account",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8282",
+              "path": [
+                "accountsapi",
+                "accounts",
+                "account"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetAccountByAccountId",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8282/accountsapi/accounts/account/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8282",
+              "path": [
+                "accountsapi",
+                "accounts",
+                "account",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetAccountByCustomerId",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8282/accountsapi/accounts/customer/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8282",
+              "path": [
+                "accountsapi",
+                "accounts",
+                "customer",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateAccountBalance",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"accountId\": 1,\r\n  \"amount\": 10000,\r\n  \"transactionType\": \"DEPOSIT\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8282/accountsapi/accounts/balance",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8282",
+              "path": [
+                "accountsapi",
+                "accounts",
+                "balance"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ContactInfo",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "BuildInfo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8282/accountsapi/build-info",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8282",
+              "path": [
+                "accountsapi",
+                "build-info"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "JavaVersion",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8282/accountsapi/java-version",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8282",
+              "path": [
+                "accountsapi",
+                "java-version"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ContactInfo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8282/accountsapi/contact-info",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8282",
+              "path": [
+                "accountsapi",
+                "contact-info"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Refresh",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8282/actuator/refresh",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8282",
+              "path": [
+                "actuator",
+                "refresh"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Transactions",
+      "item": [
+        {
+          "name": "Withdraw",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"accountId\": 1,\r\n  \"amount\": 500\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8383/transactionsapi/transactions/transaction/withdraw",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8383",
+              "path": [
+                "transactionsapi",
+                "transactions",
+                "transaction",
+                "withdraw"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Deposit",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"accountId\": 1,\r\n  \"amount\": 500\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8383/transactionsapi/transactions/transaction/deposit",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8383",
+              "path": [
+                "transactionsapi",
+                "transactions",
+                "transaction",
+                "deposit"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetAllTransactions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8383/transactionsapi/transactions/account/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8383",
+              "path": [
+                "transactionsapi",
+                "transactions",
+                "account",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Transaction-metrics",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8383/actuator/transaction-metrics",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8383",
+              "path": [
+                "actuator",
+                "transaction-metrics"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8383/actuator/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8383",
+              "path": [
+                "actuator",
+                "health"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "BuildInfo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8383/transactionsapi/build-info",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8383",
+              "path": [
+                "transactionsapi",
+                "build-info"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "JavaVersion",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8383/transactionsapi/java-version",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8383",
+              "path": [
+                "transactionsapi",
+                "java-version"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ContactInfo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8383/transactionsapi/contact-info",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8383",
+              "path": [
+                "transactionsapi",
+                "contact-info"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Refresh",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8383/actuator/refresh",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8383",
+              "path": [
+                "actuator",
+                "refresh"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
